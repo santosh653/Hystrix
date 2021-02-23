@@ -15,7 +15,7 @@ jdk:
   - openjdk8
 
 script:
-  - ./gradlew --info check
+  - ./gradlew --debug
 
 after_failure:
   - if [ -f /home/travis/build/Netflix/Hystrix/hystrix-core/build/reports/tests/test/index.html ]; then lynx -dump /home/travis/build/Netflix/Hystrix/hystrix-core/build/reports/tests/test/index.html; fi
