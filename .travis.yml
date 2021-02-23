@@ -11,7 +11,8 @@ language: java
 sudo: false
 
 jdk:
-  - oraclejdk11
+  - openjdk11
+  - openjdk8
 
 script:
   - ./gradlew --info check
